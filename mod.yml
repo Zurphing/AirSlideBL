@@ -1,0 +1,27 @@
+title: Air Slide (Base Limits)
+author: Zurphing
+description: Allows Quick Run to function like Air Slide in future entries, where you can hold Square down mid-air to quick run forward.
+assets:
+- name: obj/P_EX100.mset
+  method: copy
+  source:
+  - name: P_EX100.mset
+- name: obj/P_EX100_MAGF.mset
+  method: binarc
+  source:
+  - method: copy
+    name: C003 #Sora Wisdom Jump
+    source:
+    - name: C003.anb
+    type: ANB
+  - method: copy
+    name: A004 #Sora Falling Anim
+    source:
+    - name: A004.anb 
+    type: ANB
+  - method: copy
+    name: A101 #Sora Ledge Jump Anim
+    source:
+    - name: A101.anb 
+    type: ANB
+
